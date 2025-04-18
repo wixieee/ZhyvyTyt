@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/booked.js" defer></script>
+    <script src="js/login.js"></script>
+    <link rel="icon"  href="images/Logo.png" type="images/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>ЖивиТут</title>
+</head>
+<body>
+
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo"><img src="images/Logo.png">ЖивиТут</a>
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">
+                            <i class='bx bx-home-alt-2' ></i>
+                            <span>Головна</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="available.html" class="nav__link">
+                            <i class='bx bx-building-house' ></i>
+                            <span>Доступні квартири</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="booked.html" class="nav__link">
+                            <i class='bx bx-bookmark'></i>
+                            <span>Мої бронювання</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="index.html#contact" class="nav__link">
+                            <i class='bx bx-phone' ></i>
+                            <span>Контакти</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <a href="#" class="button nav__button" id="loginBtn">
+                Увійти
+            </a>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="booked section" id="booked">
+           <div class="booked__container container">
+                <div class="booked__info">
+                    <h1 class="user__email">Не авторизовано</h1>
+                    <h2 class="booked__title">Мої бронювання</h2>
+                </div>
+                <div class="booked__apartments"></div>
+        </section>
+
+        <div id="loginModal" class="modal">
+            <div class="login-modal-content">
+                <div class="close__container">
+                    <span class="login-close"><i class='bx bx-x'></i></span>
+                </div>
+                <div class="title__container">
+                    <h1 class="login__title">Вхід</h1>
+                </div>
+                <form id="loginForm">
+                    <div class="email__container">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="password__container">
+                        <label for="password">Пароль:</label>
+                        <input type="password" id="password" required>
+                    </div>
+                    <div class="login__button__container">
+                        <button class="login button" type="submit">Увійти</button>
+                    </div> 
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <div class="footer__head">
+                <a href="index.html" class="footer__logo">
+                    <img src="images/Logo.png">ЖивиТут
+                </a>
+                <p class="footer__description">
+                    Житло для кожного
+                </p>
+            </div>
+
+            <div class="footer__content">
+                <div>
+                    <h3 class="footer__title">
+                        Про нас
+                    </h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="info.html#vacancies" class="footer__link">Вакансії</a>
+                        </li>
+                        <li>
+                            <a href="info.html#faq" class="footer__link">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="info.html#news" class="footer__link">Новини</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer__title">
+                        Покупцям
+                    </h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="info.html#payment" class="footer__link">Оплата</a>
+                        </li>
+                        <li>
+                            <a href="info.html#partnership" class="footer__link">Партнери</a>
+                        </li>
+                        <li>
+                            <a href="info.html#contacts" class="footer__link">Контакти</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer__title">
+                        Співпраця
+                    </h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="info.html#realtor" class="footer__link">Рієлторам</a>
+                        </li>
+                        <li>
+                            <a href="info.html#owners" class="footer__link">Власникам</a>
+                        </li>
+                        <li>
+                            <a href="info.html#developers" class="footer__link">Розробникам</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer__title">
+                        Контакти
+                    </h3>
+
+                    <ul class="footer__socials">
+                        <a href="https://www.facebook.com/" class="footer__social-link">
+                            <i class='bx bxl-facebook-circle' ></i>
+                        </a>
+                        <a href="https://www.pinterest.com/" class="footer__social-link">
+                            <i class='bx bxl-pinterest' ></i>
+                        </a>
+                        <a href="https://www.youtube.com/" class="footer__social-link">
+                            <i class='bx bxl-youtube' ></i>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__info container">
+            <span class="footer__copy">
+                &#169; 2025 ЖивиТут. Всі права захищені
+            </span>
+
+            <div class="footer__privacy">
+                <a href="info.html#policy">Політика конфіденційності</a>
+                <a href="info.html#terms">Умови використання</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
