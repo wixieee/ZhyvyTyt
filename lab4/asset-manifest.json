@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ZhyvyTyt/lab4/static/css/main.759f074f.css",
+    "main.js": "/ZhyvyTyt/lab4/static/js/main.58ae6649.js",
+    "index.html": "/ZhyvyTyt/lab4/index.html",
+    "main.759f074f.css.map": "/ZhyvyTyt/lab4/static/css/main.759f074f.css.map",
+    "main.58ae6649.js.map": "/ZhyvyTyt/lab4/static/js/main.58ae6649.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.759f074f.css",
+    "static/js/main.58ae6649.js"
+  ]
+}
